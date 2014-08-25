@@ -1,4 +1,5 @@
-# Addictive Mobility JavaScript Handbook: A Best Practices & Style Guide
+# Addictive Mobility JavaScript Handbook
+A Best Practices & Style Guide
 
 
 * * *
