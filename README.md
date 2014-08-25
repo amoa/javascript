@@ -941,13 +941,15 @@ Recommended packages:
 - __[JSHint Gutter](https://sublime.wbond.net/packages/JSHint%20Gutter)__.
 Catch bugs as you type with these settings:
 ```json
-  "lint_on_load": true,
-  "lint_on_save": true,
-  "highlight_selected_regions": true,
+{
+    "lint_on_load": true,
+    "lint_on_save": true,
+    "highlight_selected_regions": true,
 
-  // Sublime Text 3 only.
-  "lint_on_edit": true,
-  "lint_on_edit_timeout": 0.3
+    // Sublime Text 3 only.
+    "lint_on_edit": true,
+    "lint_on_edit_timeout": 0.3
+}
 ```
 
 [[top](#table-of-contents)]
