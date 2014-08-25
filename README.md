@@ -374,7 +374,7 @@ var xmlHttpRequest;
 ```
 - Use PascalCase for constructors:
 ```javascript
-var Student = function Student (){};
+var Student = function Student(){};
 ```
 - Use UPPER_SNAKE_CASE when defining constant-like variables:
 ```javascript
