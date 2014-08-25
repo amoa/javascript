@@ -516,6 +516,8 @@ var configs = {
 };
 ```
 
+[[top](#table-of-contents)]
+
 - - -
 
 ## Punctuation
