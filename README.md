@@ -217,7 +217,7 @@ delete superman.type;
 superman.type = null;
 
 // bad
-function Superhero () {}
+function Superhero() {}
 Superhero.prototype.losePower = function () {
     delete this.power;
 }
@@ -226,7 +226,7 @@ Superhero.prototype.addPower = function (power) {
 }
 
 // good
-function Superhero () {
+function Superhero() {
     this.power = null;
 }
 Superhero.prototype.losePower = function () {
@@ -248,10 +248,10 @@ Never declare functions in non-function blocks (`if`, `while`, `for`, etc).
 Function statements and function exressions are both okay, depending on context.
 ```javascript
 // function statement
-function helloWorld () {}
+function helloWorld() {}
 
 // named function expression, okay in IE>=9
-var helloWorld = function helloWorld () {};
+var helloWorld = function helloWorld() {};
 
 // anonymous function expression
 var helloWorld = function () {};
@@ -260,7 +260,7 @@ var helloWorld = function () {};
 Named functions expressions [are okay in IE>=9](http://kangax.github.io/nfe/), and are preferred over anonymous function expressions for better stack traces.
 ```javascript
 // preferred in IE>=9
-this.on('click', function onClick () {
+this.on('click', function onClick() {
     ...
 })
 
@@ -272,7 +272,7 @@ this.on('click', function () {
 
 Returning early is encouraged and promotes readability and error catching.
 ```javascript
-function addNumbers (a, b) {
+function addNumbers(a, b) {
     if (typeof a !== 'number' || typeof b !== 'number') {
         return null;
     }
@@ -320,7 +320,7 @@ user.getAge();
  * Multi-line comments should be used only as headers
  * for functions, files, or sections of code
  */
-function doSomething () {}
+function doSomething() {}
 ```
 
 [[top](#table-of-contents)]
@@ -403,15 +403,15 @@ retrieveDocument(function (err, _document) {
 'self' and 'that' are also common aliases for context, but 'that' semantically contradicts the meaning of 'this' and 'self' is a global variable in all browsers making it unsafe to use.
 ```javascript
 // bad
-function closure () {
+function closure() {
     var self = this;
 }
-function closure () {
+function closure() {
     var that = this;
 }
 
 // good
-function closure () {
+function closure() {
     var _this = this;
 }
 ```
@@ -634,7 +634,7 @@ Never use `==`, except when comparing with `null`.
 Loose comparison with null offers a convenient way to check for `null` and `undefined` at the same time.
 ```javascript
 // allowed
-function hasParameter (parameter) {
+function hasParameter(parameter) {
     if (parameter == null) {
         return false;
     }
@@ -805,7 +805,7 @@ When a function is called, its context is set to its caller, not its owner.
 Newcomers to the language are often run into context problems, especially in asynchronous method callbacks.
 ```javascript
 // error
-function Person (firstName) {
+function Person(firstName) {
     this.firstName = firstName;
     this.asyncGreet = function () {
         setTimeout(function () {
@@ -820,7 +820,7 @@ peter.asyncGreet(); // 'Hi, my name is undefined'
 The preferred method of context binding is to use Function#bind, available in ES5 and IE >=9. Utility libraries like Underscore or Lo-Dash typically also provide a shim.
 ```javascript
 // preferred
-function Person (firstName) {
+function Person(firstName) {
     this.firstName = firstName;
     this.asyncGreet = function () {
         setTimeout(function () {
@@ -836,7 +836,7 @@ In the worst case scenario, fall back to aliasing.
 Use `_this` to alias `this`.
 ```javascript
 // preferred
-function Person (firstName) {
+function Person(firstName) {
     var _this = this;
     this.firstName = firstName;
     this.asyncGreet = function () {
