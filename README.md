@@ -42,6 +42,8 @@ A Best Practices & Style Guide
   1. [Sublime Text](#sublime-text)
   2. [JSHint](#jshint)
   3. [JSCS](#jscs)
+8. [Notes](#notes)
+  1. [ECMAScript / Browser Support](#ecmascript-browser-support)
 
 
 * * *
@@ -971,6 +973,18 @@ A JavaScript [code style checker](https://github.com/mdevils/node-jscs).
 Add a pre-commit hook to catch styling issues before committing.
 
 [[top](#table-of-contents)]
+
+
+* * *
+
+
+## Notes
+
+### ECMAScript / Browser Support
+
+Write JavaScript to target ECMAScript 5 environments.
+Supported browsers include Internet Explorer 9+ and current and previous major releases of Chrome, Safari, Firefox. 
+Experimental ECMAScript 6 features should only be used on the server side, with precaution.
 
 
 * * *
