@@ -43,7 +43,7 @@ A Best Practices & Style Guide
   2. [JSHint](#jshint)
   3. [JSCS](#jscs)
 8. [Notes](#notes)
-  1. [ECMAScript / Browser Support](#ecmascript-browser-support)
+  1. [ECMAScript / Browser Support](#ecmascript--browser-support)
 
 
 * * *
