@@ -37,8 +37,9 @@ A Best Practices & Style Guide
   7. [Event Handling](#event-handling)
 6. [Structure](#structure)
   1. [Modules](#modules)
-  2. [Filenames](#filenames)
-  3. [Versioning](#versioning)
+  2. [Dependencies](#dependencies)
+  3. [Filenames](#filenames)
+  4. [Versioning](#versioning)
 7. [Tools](#tools)
   1. [Sublime Text](#sublime-text)
   2. [JSHint](#jshint)
@@ -894,6 +895,22 @@ function showPopup(x, y){
 
 CommonJS is the one true way.
 It works natively on the server-side with Node.js _and_ on the client-side by compiling with Browserify.
+
+[[top](#table-of-contents)]
+
+- - -
+
+### Dependencies
+
+If you are using Node.js, then you should already be using [NPM](https://www.npmjs.org/) to manage your dependencies and have your dependencies saved in package.json.
+
+Always use the `--save` flag to automatically add the dependency to package.json.
+Always use the `--save-exact` flag to to prevent auto-updates.
+While the vast majority of NPM packages follow semantic versioning, it [cannot be depended upon](https://github.com/jashkenas/underscore/issues/1805).
+
+```
+npm install --save --save-exact lo-dash
+```
 
 [[top](#table-of-contents)]
 
