@@ -917,7 +917,7 @@ library-1.0.2.js
 
 ### Versioning
 
-If your script provides a public API of any kind, use [Semantic Versioning](#http://semver.org/).
+If your script provides a public API of any kind, use [Semantic Versioning](http://semver.org/).
 
 [[top](#table-of-contents)]
 
