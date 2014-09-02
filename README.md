@@ -38,6 +38,7 @@ A Best Practices & Style Guide
 6. [Structure](#structure)
   1. [Modules](#modules)
   2. [Filenames](#filenames)
+  3. [Versioning](#versioning)
 7. [Tools](#tools)
   1. [Sublime Text](#sublime-text)
   2. [JSHint](#jshint)
@@ -909,6 +910,14 @@ filename-template.js
 library.plugin.js
 library-1.0.2.js
 ```
+
+[[top](#table-of-contents)]
+
+- - -
+
+### Versioning
+
+If your script provides a public API of any kind, use [Semantic Versioning](#http://semver.org/).
 
 [[top](#table-of-contents)]
 
