@@ -1014,3 +1014,25 @@ Experimental ECMAScript 6 features should only be used on the server side, with 
 
 
 * * *
+
+
+## Appendix
+
+### Further Reading
+
+The following links may not be consistent with the above guide, but are good reads nonetheless:
+- Guides
+  - http://read.humanjavascript.com/
+  - http://www.alexkras.com/summary-of-maintainable-javascript/
+- Style
+  - https://github.com/airbnb/javascript
+  - https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+  - https://github.com/rwaldron/idiomatic.js/
+  - http://speakingjs.com/es5/ch26.html#_general_tips
+- Optimization
+  - https://developers.google.com/speed/articles/optimizing-javascript
+  - https://github.com/petkaantonov/bluebird/wiki/Optimization-killers
+  - https://developers.google.com/v8/design
+
+
+* * *
